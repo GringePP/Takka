@@ -1,4 +1,7 @@
 // pages/quiz/quiz.js
+
+const app = getApp();
+
 Page({
 
   /**
@@ -48,17 +51,19 @@ Page({
 
   onTrue: function () {
     if (this.data.correct) {
+      app.globalData.score += 1;
       this.nextQzui();
     } else {
-      alert('false!!');
+      wx.navigateBack();
     }
   },
 
   onFalse: function () {
     if (!this.data.correct) {
+      app.globalData.score += 1;
       this.nextQzui();
     } else {
-      alert('false!!'); 
+      wx.navigateBack();
     }
   },
 
@@ -66,6 +71,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    app.globalData.score = 0;
     this.nextQzui();
   },
 
