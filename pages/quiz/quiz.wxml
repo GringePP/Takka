@@ -1,0 +1,10 @@
+<!-- pages/quiz/quiz.wxml -->
+<view class="container">
+    <block>
+        <text>{{expression}}</text>
+    </block>
+    <view>
+        <button class="btn-round" bindtap="onTrue">√</button>
+        <button class="btn-round" bindtap="onFalse">×</button>
+    </view>
+</view>
