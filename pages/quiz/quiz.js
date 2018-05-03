@@ -58,7 +58,7 @@ Page({
     if (!this.data.correct) {
       this.nextQzui();
     } else {
-      alert('false!!');
+      alert('false!!'); 
     }
   },
 

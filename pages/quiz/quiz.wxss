@@ -1,1 +1,44 @@
 /* pages/quiz/quiz.wxss */
+
+page {
+  background-color: #fffa26;
+}
+
+.expression {
+  font-family: Consolas;
+  font-size: 60rpx;
+  background-color: rgba(0, 0, 0, .05);
+  padding: 150rpx 80rpx;
+  border-radius: 20rpx;
+}
+
+.btn-group {
+  display: flex;
+  position: fixed;
+  bottom: 50rpx;
+  width: 100%;
+  justify-content: center;
+}
+
+.btn-round {
+  width: 300rpx;
+  height: 300rpx;
+  line-height: 300rpx;
+  font-size: 60rpx;
+  color: white;
+  border-radius: 150rpx;
+  /* border: 5rpx solid white; */
+  box-shadow: 0 5rpx 10rpx 5rpx rgba(0, 0, 0, .1);
+}
+
+.btn-round:active {
+  box-shadow: 0 10rpx 10rpx 10rpx rgba(0, 0, 0, .1);
+}
+
+.btn-true {
+  background-color: #62fd46;
+}
+
+.btn-false {
+  background-color: #ff5b5b;
+}
